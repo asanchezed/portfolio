@@ -113,20 +113,43 @@ list_all_scripts() {
   "
 }
 
-check_git_clean() {
-  if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-    return 0
+print_usage() {
+  cat <<EOF
+${C_BOLD}Uso:${C_RESET} ./scripts/run.sh [comando]
+
+${C_BOLD}Comandos:${C_RESET}
+  ${C_YELLOW}start${C_RESET}       Ejecutar en local (npm run start)
+  ${C_YELLOW}build:prod${C_RESET}  Build de producción (npm run build:prod)
+  ${C_YELLOW}deploy${C_RESET}      Deploy a GitHub Pages (con check de git)
+  ${C_YELLOW}usage${C_RESET}       Muestra esta ayuda
+
+Sin argumentos abre el menú interactivo.
+EOF
+}
+
+run_deploy() {
+  if [[ -n "${GIT_CONFIG:-}" ]]; then
+    echo "${C_YELLOW}ℹ  GIT_CONFIG=$GIT_CONFIG detectado — se desactiva solo para este deploy (gh-pages necesita leer .git/config).${C_RESET}"
   fi
-  if [[ -n "$(git status --porcelain)" ]]; then
-    echo ""
-    echo "${C_YELLOW}⚠  Tienes cambios sin commitear:${C_RESET}"
-    git status --short
-    read -rp "$(printf "${C_YELLOW}¿Continuar con el deploy? [y/N]:${C_RESET} ")" ans
-    [[ "$ans" =~ ^[yY]$ ]] || return 1
-  fi
+  ( unset GIT_CONFIG && pick_script "deploy" deploy )
 }
 
 main() {
+  if [[ $# -gt 0 ]]; then
+    case "$1" in
+      start) pick_script "ejecutar en local" start start:host ;;
+      build:prod) run_script build:prod ;;
+      deploy) run_deploy ;;
+      usage|-h|--help|help) print_usage ;;
+      *)
+        echo "${C_RED}Comando desconocido: $1${C_RESET}" >&2
+        print_usage
+        exit 1
+        ;;
+    esac
+    exit $?
+  fi
+
   while true; do
     print_menu
     read -rp "$(printf "${C_CYAN}Selecciona una opción${C_RESET} ${C_DIM}[1]:${C_RESET} ")" opt
@@ -134,13 +157,7 @@ main() {
     case "$opt" in
       1) pick_script "ejecutar en local" start start:host ;;
       2) pick_script "build" build:prod build:gh build ;;
-      3)
-        check_git_clean || { echo "${C_YELLOW}Deploy cancelado.${C_RESET}"; continue; }
-        if [[ -n "${GIT_CONFIG:-}" ]]; then
-          echo "${C_YELLOW}ℹ  GIT_CONFIG=$GIT_CONFIG detectado — se desactiva solo para este deploy (gh-pages necesita leer .git/config).${C_RESET}"
-        fi
-        ( unset GIT_CONFIG && pick_script "deploy" deploy )
-        ;;
+      3) run_deploy ;;
       4) list_all_scripts ;;
       q|Q) echo "${C_MAGENTA}Hasta luego.${C_RESET}"; exit 0 ;;
       *) echo "${C_RED}Opción no válida.${C_RESET}" ;;

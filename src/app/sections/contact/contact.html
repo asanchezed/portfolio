@@ -18,15 +18,4 @@
       📍 {{ languageService.data().personal.remote.text }}
     </a>
   </div>
-
-  <div class="languages">
-    <h3>{{ languageService.currentLanguage() === 'es' ? 'Idiomas' : 'Languages' }}</h3>
-    <div class="language-list">
-      <div class="language-item" *ngFor="let lang of languageService.data().personal.languages">
-        <strong>{{ lang.name }}</strong>
-        <span>{{ lang.level }}</span>
-        <span *ngIf="lang.details" class="details">{{ lang.details }}</span>
-      </div>
-    </div>
-  </div>
 </section>

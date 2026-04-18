@@ -52,12 +52,16 @@
     max-width: 100% !important;
     margin: 0 !important;
 
-
+    h2 {
+      margin-bottom: 0.75rem !important;
+    }
 
     .skills-grid {
       display: flex !important;
       flex-wrap: wrap !important;
-      gap: 0.5rem !important;
+      row-gap: 0.7rem !important;
+      column-gap: 0.5rem !important;
+      margin-top: 0.5rem !important;
 
       .skill-item {
         border: 1px solid #ccc !important;
@@ -67,6 +71,11 @@
         box-shadow: none !important;
       }
     }
+
+    .skills-gap {
+      height: 0.75rem !important;
+    }
+
   }
 
   @media (max-width: 768px) {

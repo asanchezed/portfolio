@@ -1,5 +1,8 @@
 <header class="sticky-header">
-  <h1 class="sticky-name" [class.visible]="showStickyHeader">{{ languageService.data().personal.name }}</h1>
+  <div class="sticky-profile" [class.visible]="showStickyHeader">
+    <img class="sticky-avatar" src="assets/images/cv.png" alt="" />
+    <h1 class="sticky-name">{{ languageService.data().personal.name }}</h1>
+  </div>
 
   <div class="controls">
     <button class="icon-btn" (click)="toggleTheme()">
@@ -21,4 +24,5 @@
 <app-experience></app-experience>
 <app-education></app-education>
 <app-skills></app-skills>
+<app-languages></app-languages>
 <app-contact></app-contact>

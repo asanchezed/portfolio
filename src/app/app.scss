@@ -17,11 +17,10 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   }
 
-  .sticky-name {
-    margin: 0;
-    font-size: 1.5rem;
-    color: white;
-    font-weight: 600;
+  .sticky-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     opacity: 0;
     transform: translateX(-20px);
     transition: all 0.3s ease;
@@ -30,6 +29,22 @@
       opacity: 1;
       transform: translateX(0);
     }
+  }
+
+  .sticky-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 1px solid var(--border);
+  }
+
+  .sticky-name {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
 
     :host-context(body.light) & {
       color: var(--text);

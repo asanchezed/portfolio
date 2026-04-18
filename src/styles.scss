@@ -35,4 +35,42 @@ body.light {
     color: black;
     text-decoration: none;
   }
+
+  h2 {
+    text-align: left !important;
+    margin-bottom: 0.5rem !important;
+    font-size: 1.5rem !important;
+  }
+
+  h3 {
+    margin: 0 0 0.15rem !important;
+    line-height: 1.2 !important;
+  }
+
+  h4 {
+    margin: 0 0 0.25rem !important;
+    line-height: 1.2 !important;
+  }
+
+  p {
+    line-height: 1.3 !important;
+    margin: 0.15rem 0 !important;
+  }
+
+  app-experience,
+  app-skills,
+  app-education,
+  app-contact,
+  app-languages {
+    display: block !important;
+    border-top: 1px solid #ccc !important;
+    padding-top: 0.5rem !important;
+    margin-top: 0.5rem !important;
+  }
+
+  app-experience {
+    border-top: none !important;
+  }
+
+
 }

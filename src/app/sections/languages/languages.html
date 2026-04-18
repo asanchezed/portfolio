@@ -1,0 +1,10 @@
+<section class="languages" @fadeUp>
+  <h2>{{ languageService.currentLanguage() === 'es' ? 'Idiomas' : 'Languages' }}</h2>
+  <div class="language-list">
+    <div class="language-item" *ngFor="let lang of languageService.data().personal.languages">
+      <strong>{{ lang.name }}</strong>
+      <span>{{ lang.level }}</span>
+      <span *ngIf="lang.details" class="details">{{ lang.details }}</span>
+    </div>
+  </div>
+</section>

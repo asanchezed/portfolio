@@ -138,11 +138,11 @@
 
     .hero-image {
       display: block;
-      flex: 0 0 150px;
+      flex: 0 0 110px;
 
       .image-wrapper {
-        width: 150px;
-        height: 210px;
+        width: 110px;
+        height: 154px;
         border: 1px solid var(--border);
         padding: 5px;
         background: none;
@@ -175,6 +175,7 @@
       font-size: 1.2rem !important;
       margin: 0.25rem 0 !important;
       border: none;
+      text-align: center !important;
     }
 
     p {

@@ -7,12 +7,13 @@ import { Experience } from './sections/experience/experience';
 import { Skills } from './sections/skills/skills';
 import { Contact } from './sections/contact/contact';
 import { Education } from './sections/education/education';
+import { Languages } from './sections/languages/languages';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',
-  imports: [CommonModule, Hero, Experience, Skills, Contact, Education]
+  imports: [CommonModule, Hero, Experience, Skills, Contact, Education, Languages]
 })
 export class App {
   theme = inject(ThemeService);
