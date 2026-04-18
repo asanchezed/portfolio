@@ -4,7 +4,7 @@ A modern, high-performance professional portfolio and interactive resume built w
 
 ## 🚀 Live Demo
 
-[View Live Portfolio](https://asanchez156.github.io/portfolio/)
+[View Live Portfolio](https://asanchezed.github.io/portfolio/)
 
 ## ✨ Key Features
 
@@ -29,7 +29,7 @@ A modern, high-performance professional portfolio and interactive resume built w
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/asanchez156/portfolio.git
+   git clone https://github.com/asanchezed/portfolio.git
    cd portfolio
    ```
 

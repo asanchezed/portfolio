@@ -30,11 +30,11 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
     personal: {
       name: 'Andoni Sánchez',
       role: 'Senior Full-Stack & DevOps Engineer',
-      summary: 'Node.js · Angular · Kubernetes · Docker · CI/CD · Cloud · IA aplicada',
+      summary: 'Node.js · NestJS · Angular · React · Kubernetes · Docker · CI/CD · Cloud · IA aplicada',
       email: 'asanchezed@gmail.com',
       handle: 'asanchezed',
       linkedin: 'https://www.linkedin.com/in/asanchezed/',
-      github: 'https://github.com/asanchez156',
+      github: 'https://github.com/asanchezed',
       remote: { text: '100% Remoto', url: 'https://www.google.com/maps/place/Donostia-San+Sebastian' },
       languages: [
         { name: 'Español', level: 'Nivel: C2' },
@@ -47,7 +47,7 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
         period: '2017-05-02 / Actualmente',
         company: 'Iris Technology',
         role: 'Senior Full-stack developer',
-        description: 'Arquitectura y DevOps: Kubernetes, Docker, GCP, despliegue continuo con CI/CD y testing automatizado mediante IA. Backend: Node.js (Express, NestJS), PostgreSQL. Frontend: Angular. IA: Desarrollo de sistemas de agentes autónomos para la optimización de procesos. Metodologías: Scrum, Git. Remoto desde 2017.'
+        description: 'Arquitectura y DevOps: Kubernetes, Docker, GCP, despliegue continuo con CI/CD y testing automatizado mediante IA. Backend: Node.js (Express, NestJS), PostgreSQL, Redis. Tiempo real: Kafka + WebSockets. Frontend: Angular y React. IA: Desarrollo de sistemas de agentes autónomos para la optimización de procesos. Metodologías: Scrum, Git. Remoto desde 2017.'
       },
       {
         period: '2016-09-29 / 2017-05-01',
@@ -128,6 +128,7 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
 
       // Frontend (Current)
       'Angular',
+      'React',
       'TypeScript',
       'JavaScript',
       'HTML5',
@@ -136,6 +137,7 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
       // Additional Backend & Infrastructure
       'REST APIs',
       'Microservices',
+      'Redis',
       'Nginx',
       'Kafka',
       'RabbitMQ',
@@ -159,11 +161,11 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
     personal: {
       name: 'Andoni Sánchez',
       role: 'Senior Full-Stack & DevOps Engineer',
-      summary: 'Node.js · Angular · Kubernetes · Docker · CI/CD · Cloud · Applied AI',
+      summary: 'Node.js · NestJS · Angular · React · Kubernetes · Docker · CI/CD · Cloud · Applied AI',
       email: 'asanchezed@gmail.com',
       handle: 'asanchezed',
       linkedin: 'https://www.linkedin.com/in/asanchezed/',
-      github: 'https://github.com/asanchez156',
+      github: 'https://github.com/asanchezed',
       remote: { text: '100% Remote', url: 'https://www.google.com/maps/place/Donostia-San+Sebastian' },
       languages: [
         { name: 'Spanish', level: 'Level: C2' },
@@ -176,7 +178,7 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
         period: '2017-05-02 / Present',
         company: 'Iris Technology',
         role: 'Senior Full-stack developer',
-        description: 'Architecture & DevOps: Kubernetes, Docker, GCP, continuous deployment with CI/CD and AI-powered automated testing. Backend: Node.js (Express, NestJS), PostgreSQL. Frontend: Angular. AI: Development of autonomous agent systems for process optimization. Methodologies: Scrum, Git. Remote since 2017.'
+        description: 'Architecture & DevOps: Kubernetes, Docker, GCP, continuous deployment with CI/CD and AI-powered automated testing. Backend: Node.js (Express, NestJS), PostgreSQL, Redis. Real-time: Kafka + WebSockets. Frontend: Angular and React. AI: Development of autonomous agent systems for process optimization. Methodologies: Scrum, Git. Remote since 2017.'
       },
       {
         period: '2016-09-29 / 2017-05-01',
@@ -257,6 +259,7 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
 
       // Frontend (Current)
       'Angular',
+      'React',
       'TypeScript',
       'JavaScript',
       'HTML5',
@@ -265,6 +268,7 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
       // Additional Backend & Infrastructure
       'REST APIs',
       'Microservices',
+      'Redis',
       'Nginx',
       'Kafka',
       'RabbitMQ',
