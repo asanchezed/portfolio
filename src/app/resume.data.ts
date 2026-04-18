@@ -46,7 +46,7 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
       {
         period: '2017-05-02 / Actualmente',
         company: 'Iris Technology',
-        role: 'Senior Full-stack developer',
+        role: 'Senior Full-Stack & DevOps Engineer',
         description: 'Arquitectura y DevOps: Kubernetes, Docker, GCP, despliegue continuo con CI/CD y testing automatizado mediante IA. Desarrollo asistido con Claude Code. Backend: Node.js (Express, NestJS) y Python (FastAPI), PostgreSQL con TypeORM, Redis. Tiempo real: Kafka + WebSockets. Frontend: Angular, React (Tailwind, Vite), visualización de datos con D3.js. IA: agentes autónomos (LangChain, CrewAI) y pipelines NLP/ML con OpenAI API, Hugging Face Transformers, spaCy y FAISS. Metodologías: Scrum, Git. Remoto desde 2017.'
       },
       {
@@ -193,7 +193,7 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
       {
         period: '2017-05-02 / Present',
         company: 'Iris Technology',
-        role: 'Senior Full-stack developer',
+        role: 'Senior Full-Stack & DevOps Engineer',
         description: 'Architecture & DevOps: Kubernetes, Docker, GCP, continuous deployment with CI/CD and AI-powered automated testing. AI-assisted development with Claude Code. Backend: Node.js (Express, NestJS) and Python (FastAPI), PostgreSQL with TypeORM, Redis. Real-time: Kafka + WebSockets. Frontend: Angular, React (Tailwind, Vite), data viz with D3.js. AI: autonomous agents (LangChain, CrewAI) and NLP/ML pipelines using OpenAI API, Hugging Face Transformers, spaCy and FAISS. Methodologies: Scrum, Git. Remote since 2017.'
       },
       {
