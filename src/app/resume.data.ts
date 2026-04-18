@@ -47,7 +47,7 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
         period: '2017-05-02 / Actualmente',
         company: 'Iris Technology',
         role: 'Senior Full-stack developer',
-        description: 'Arquitectura y DevOps: Kubernetes, Docker, GCP, despliegue continuo con CI/CD y testing automatizado mediante IA. Backend: Node.js (Express, NestJS), PostgreSQL, Redis. Tiempo real: Kafka + WebSockets. Frontend: Angular y React. IA: Desarrollo de sistemas de agentes autónomos para la optimización de procesos. Metodologías: Scrum, Git. Remoto desde 2017.'
+        description: 'Arquitectura y DevOps: Kubernetes, Docker, GCP, despliegue continuo con CI/CD y testing automatizado mediante IA. Desarrollo asistido con Claude Code. Backend: Node.js (Express, NestJS) y Python (FastAPI), PostgreSQL con TypeORM, Redis. Tiempo real: Kafka + WebSockets. Frontend: Angular, React (Tailwind, Vite), visualización de datos con D3.js. IA: agentes autónomos (LangChain, CrewAI) y pipelines NLP/ML con OpenAI API, Hugging Face Transformers, spaCy y FAISS. Metodologías: Scrum, Git. Remoto desde 2017.'
       },
       {
         period: '2016-09-29 / 2017-05-01',
@@ -119,12 +119,17 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
       'AI Agents (LangChain, CrewAI)',
       'Express',
       'Restify',
+      'Python',
+      'FastAPI',
       'Kubernetes',
       'Docker',
       'Google Cloud Platform',
+      'Firebase',
       'PostgreSQL',
+      'TypeORM',
       'CI/CD',
       'Git',
+      'Claude Code',
 
       // Frontend (Current)
       'Angular',
@@ -133,6 +138,17 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
       'JavaScript',
       'HTML5',
       'SASS',
+      'Tailwind CSS',
+      'Vite',
+      'D3.js',
+
+      // AI / ML / Data
+      'OpenAI API',
+      'Hugging Face Transformers',
+      'spaCy',
+      'FAISS',
+      'Pandas',
+      'NumPy',
 
       // Additional Backend & Infrastructure
       'REST APIs',
@@ -178,7 +194,7 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
         period: '2017-05-02 / Present',
         company: 'Iris Technology',
         role: 'Senior Full-stack developer',
-        description: 'Architecture & DevOps: Kubernetes, Docker, GCP, continuous deployment with CI/CD and AI-powered automated testing. Backend: Node.js (Express, NestJS), PostgreSQL, Redis. Real-time: Kafka + WebSockets. Frontend: Angular and React. AI: Development of autonomous agent systems for process optimization. Methodologies: Scrum, Git. Remote since 2017.'
+        description: 'Architecture & DevOps: Kubernetes, Docker, GCP, continuous deployment with CI/CD and AI-powered automated testing. AI-assisted development with Claude Code. Backend: Node.js (Express, NestJS) and Python (FastAPI), PostgreSQL with TypeORM, Redis. Real-time: Kafka + WebSockets. Frontend: Angular, React (Tailwind, Vite), data viz with D3.js. AI: autonomous agents (LangChain, CrewAI) and NLP/ML pipelines using OpenAI API, Hugging Face Transformers, spaCy and FAISS. Methodologies: Scrum, Git. Remote since 2017.'
       },
       {
         period: '2016-09-29 / 2017-05-01',
@@ -250,12 +266,17 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
       'AI Agents (LangChain, CrewAI)',
       'Express',
       'Restify',
+      'Python',
+      'FastAPI',
       'Kubernetes',
       'Docker',
       'Google Cloud Platform',
+      'Firebase',
       'PostgreSQL',
+      'TypeORM',
       'CI/CD',
       'Git',
+      'Claude Code',
 
       // Frontend (Current)
       'Angular',
@@ -264,6 +285,17 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
       'JavaScript',
       'HTML5',
       'SASS',
+      'Tailwind CSS',
+      'Vite',
+      'D3.js',
+
+      // AI / ML / Data
+      'OpenAI API',
+      'Hugging Face Transformers',
+      'spaCy',
+      'FAISS',
+      'Pandas',
+      'NumPy',
 
       // Additional Backend & Infrastructure
       'REST APIs',
