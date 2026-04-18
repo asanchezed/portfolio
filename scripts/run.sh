@@ -136,7 +136,10 @@ main() {
       2) pick_script "build" build:prod build:gh build ;;
       3)
         check_git_clean || { echo "${C_YELLOW}Deploy cancelado.${C_RESET}"; continue; }
-        pick_script "deploy" deploy
+        if [[ -n "${GIT_CONFIG:-}" ]]; then
+          echo "${C_YELLOW}ℹ  GIT_CONFIG=$GIT_CONFIG detectado — se desactiva solo para este deploy (gh-pages necesita leer .git/config).${C_RESET}"
+        fi
+        ( unset GIT_CONFIG && pick_script "deploy" deploy )
         ;;
       4) list_all_scripts ;;
       q|Q) echo "${C_MAGENTA}Hasta luego.${C_RESET}"; exit 0 ;;
