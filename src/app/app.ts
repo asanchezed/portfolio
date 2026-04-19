@@ -8,12 +8,13 @@ import { Skills } from './sections/skills/skills';
 import { Contact } from './sections/contact/contact';
 import { Education } from './sections/education/education';
 import { Languages } from './sections/languages/languages';
+import { CoverLetter } from './sections/cover-letter/cover-letter';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',
-  imports: [CommonModule, Hero, Experience, Skills, Contact, Education, Languages]
+  imports: [CommonModule, Hero, Experience, Skills, Contact, Education, Languages, CoverLetter]
 })
 export class App {
   theme = inject(ThemeService);

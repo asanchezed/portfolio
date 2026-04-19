@@ -1,0 +1,26 @@
+<section class="cover-letter" @fadeUp>
+  <button
+    type="button"
+    class="toggle"
+    [attr.aria-expanded]="isExpanded()"
+    aria-controls="cover-letter-body"
+    (click)="toggle()"
+  >
+    <h2>
+      {{ languageService.currentLanguage() === 'es' ? 'Carta de motivación' : 'Cover letter' }}
+    </h2>
+    <span class="chevron" [class.open]="isExpanded()" aria-hidden="true">▾</span>
+  </button>
+
+  @if (isExpanded()) {
+    <div id="cover-letter-body" class="body">
+      @if (html(); as content) {
+        <div [innerHTML]="content"></div>
+      } @else if (loading()) {
+        <p class="status">
+          {{ languageService.currentLanguage() === 'es' ? 'Cargando…' : 'Loading…' }}
+        </p>
+      }
+    </div>
+  }
+</section>
