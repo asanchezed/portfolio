@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Read(//home/developer/projects/personal_home_projects/**)"
+      "Read(//home/developer/projects/personal_home_projects/**)",
+      "Bash(npm run *)",
+      "Bash(npm test *)"
     ]
   }
 }

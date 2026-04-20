@@ -23,6 +23,13 @@ export interface ResumeData {
     details: string;
   }[];
   skills: string[];
+  projects: {
+    period: string;
+    title: string;
+    description: string;
+    technologies: string[];
+    link?: string;
+  }[];
 }
 
 export const RESUME_DATA: { [key: string]: ResumeData } = {
@@ -171,6 +178,32 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
       'PHP/CodeIgniter',
       'Oracle SQL',
       'MySQL'
+    ],
+    projects: [
+      {
+        period: '2020 / Actualmente',
+        title: 'Homelab & Domótica personal',
+        description: 'Infraestructura casera self-hosted en dos ubicaciones: ~20 stacks Docker Compose (Home Assistant, Frigate NVR con reconocimiento de objetos para detección de personas, Plex, AdGuard Home, Nginx Proxy Manager, WireGuard/OpenVPN) orquestados por scripts propios. Domótica avanzada con Zigbee2MQTT, Matter, ESPHome y MQTT, automatizaciones HA con ~14k líneas YAML, templates Jinja2 reutilizables y dashboards Lovelace multi-usuario y multi-ubicación. Scripts propios de mantenimiento en Bash, Python (integraciones personales) y Node.js/Express, más imágenes Docker custom publicadas en Docker Hub.',
+        technologies: [
+          'Docker Compose',
+          'Home Assistant',
+          'MQTT',
+          'Zigbee2MQTT',
+          'ESPHome',
+          'Matter',
+          'Frigate',
+          'WireGuard',
+          'OpenVPN',
+          'Nginx Proxy Manager',
+          'AdGuard Home',
+          'Plex',
+          'PostgreSQL',
+          'Bash',
+          'Python',
+          'Node.js / Express',
+          'Raspberry Pi / BLE'
+        ]
+      }
     ]
   },
   en: {
@@ -318,6 +351,32 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
       'PHP/CodeIgniter',
       'Oracle SQL',
       'MySQL'
+    ],
+    projects: [
+      {
+        period: '2020 / Present',
+        title: 'Personal Homelab & Smart Home',
+        description: 'Self-hosted home infrastructure across two locations: ~20 Docker Compose stacks (Home Assistant, Frigate NVR with object recognition for person detection, Plex, AdGuard Home, Nginx Proxy Manager, WireGuard/OpenVPN) orchestrated by custom scripts. Advanced smart-home with Zigbee2MQTT, Matter, ESPHome and MQTT, Home Assistant automations totaling ~14k lines of YAML, reusable Jinja2 templates and multi-user / multi-location Lovelace dashboards. Maintenance scripts in Bash, Python (personal integrations) and Node.js/Express, plus custom Docker images published on Docker Hub.',
+        technologies: [
+          'Docker Compose',
+          'Home Assistant',
+          'MQTT',
+          'Zigbee2MQTT',
+          'ESPHome',
+          'Matter',
+          'Frigate',
+          'WireGuard',
+          'OpenVPN',
+          'Nginx Proxy Manager',
+          'AdGuard Home',
+          'Plex',
+          'PostgreSQL',
+          'Bash',
+          'Python',
+          'Node.js / Express',
+          'Raspberry Pi / BLE'
+        ]
+      }
     ]
   }
 };

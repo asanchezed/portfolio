@@ -4,6 +4,7 @@ import { ThemeService } from './theme.service';
 import { LanguageService } from './language.service';
 import { Hero } from './sections/hero/hero';
 import { Experience } from './sections/experience/experience';
+import { Projects } from './sections/projects/projects';
 import { Skills } from './sections/skills/skills';
 import { Contact } from './sections/contact/contact';
 import { Education } from './sections/education/education';
@@ -14,7 +15,7 @@ import { CoverLetter } from './sections/cover-letter/cover-letter';
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',
-  imports: [CommonModule, Hero, Experience, Skills, Contact, Education, Languages, CoverLetter]
+  imports: [CommonModule, Hero, Experience, Projects, Skills, Contact, Education, Languages, CoverLetter]
 })
 export class App {
   theme = inject(ThemeService);

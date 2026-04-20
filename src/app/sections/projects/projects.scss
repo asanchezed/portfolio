@@ -1,13 +1,13 @@
 :host {
   display: block;
-  background: #0a1128;
+  background: #1e293b;
 }
 
 :host-context(body.light) {
-  background: #f0f9ff;
+  background: #dbeafe;
 }
 
-.education {
+.projects {
   padding: 4rem 2rem;
   max-width: 800px;
   margin: 0 auto;
@@ -64,19 +64,39 @@
 
         h3 {
           font-size: 1.4rem;
-          margin-bottom: 0.5rem;
-          color: var(--text);
-        }
-
-        h4 {
-          font-size: 1.1rem;
-          color: var(--primary);
           margin-bottom: 1rem;
+          color: var(--text);
         }
 
         p {
           color: var(--text-secondary);
           line-height: 1.6;
+          margin-bottom: 1.2rem;
+        }
+
+        .tech-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          margin-top: 0.5rem;
+        }
+
+        .tech-chip {
+          background: var(--surface);
+          padding: 0.35rem 0.8rem;
+          border-radius: 100px;
+          border: 1px solid var(--border);
+          color: var(--text-secondary);
+          font-size: 0.85rem;
+          font-weight: 500;
+        }
+
+        .project-link {
+          display: inline-block;
+          margin-top: 1rem;
+          color: var(--primary);
+          font-size: 0.9rem;
+          word-break: break-all;
         }
       }
     }
@@ -112,12 +132,13 @@
             font-size: 1.2rem;
           }
 
-          h4 {
-            font-size: 1rem;
-          }
-
           p {
             font-size: 0.9rem;
+          }
+
+          .tech-chip {
+            font-size: 0.8rem;
+            padding: 0.3rem 0.7rem;
           }
         }
       }
@@ -146,7 +167,25 @@
           border: none !important;
           background: none !important;
 
-          h3, h4, p {
+          h3, p {
+            color: black !important;
+          }
+
+          .tech-list {
+            row-gap: 0.4rem !important;
+            column-gap: 0.4rem !important;
+            margin-top: 0.4rem !important;
+          }
+
+          .tech-chip {
+            border: 1px solid #ccc !important;
+            padding: 0.2rem 0.45rem !important;
+            background: none !important;
+            color: black !important;
+            font-size: 0.8rem !important;
+          }
+
+          .project-link {
             color: black !important;
           }
         }
