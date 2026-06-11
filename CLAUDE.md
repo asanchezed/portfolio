@@ -72,7 +72,7 @@ The `src/i18n/texts.{es,en}.json` files exist but are separate from the resume d
 ### Styling
 
 - SCSS with CSS variables for theming (light/dark via `body.light` class).
-- `anyComponentStyle` budget is tight: **warn 4kB / error 8kB** per component stylesheet. Keep per-section SCSS small; shared styles belong in `src/styles.scss`.
+- `anyComponentStyle` budget is tight: **warn 6kB / error 8kB** per component stylesheet. Keep per-section SCSS small; shared styles belong in `src/styles.scss`.
 - Initial bundle budget: warn 500kB / error 1MB.
 - Print styles are a first-class concern (Ctrl+P generates the PDF CV) — verify changes still print cleanly.
 
