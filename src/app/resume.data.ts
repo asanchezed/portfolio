@@ -55,38 +55,38 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
         company: 'Iris Technology',
         role: 'Senior Full-Stack & DevOps Engineer',
         highlights: [
-          'Arquitectura y DevOps: Kubernetes, Docker, GCP, despliegue continuo con CI/CD y testing automatizado mediante IA.',
-          'Desarrollo agéntico (agentic coding) con Claude Code.',
-          'Backend: Node.js (Express, NestJS) y Python (FastAPI), PostgreSQL con TypeORM, Redis.',
-          'Tiempo real: Kafka + WebSockets.',
-          'Frontend: Angular, React (Tailwind, Vite), visualización de datos con D3.js.',
-          'IA: agentes autónomos (LangChain, CrewAI) y pipelines NLP/ML con OpenAI API, Hugging Face Transformers, spaCy y FAISS.',
-          'Metodologías: Scrum, Git. Remoto desde 2017.'
+          'Arquitectura: microservicios CQRS orientados a eventos con Apache Kafka, en monorepo Node.js + TypeScript replicado en varias plataformas paralelas.',
+          'Backend: Node.js (Express, NestJS) y Python (FastAPI); autenticación JWT y OAuth2 (Passport), tiempo real con Socket.IO, Redis y Google Cloud Storage.',
+          'Base de datos: PostgreSQL + TypeORM con migraciones versionadas y verificadas en CI (forward y rollback).',
+          'Frontend: plataformas Angular (RxJS, Angular Material, DevExtreme, formularios reactivos, i18n en 7 idiomas con tooling propio) y React (Tailwind, Vite); visualización con D3.js y Chart.js.',
+          'DevOps: Kubernetes, Docker Swarm y GCP; CI/CD automatizado con GitLab, pipelines multi-stage optimizadas con caché compartida, runners propios y despliegues por SHA inmutable.',
+          'Calidad: tests de integración con AVA contra Postgres real, verificación visual con Playwright, ESLint + Prettier y testing automatizado mediante IA.',
+          'IA: desarrollo agéntico (agentic coding) con Claude Code; agentes autónomos (LangChain, CrewAI) y pipelines NLP/ML (OpenAI API, Hugging Face Transformers, spaCy, FAISS).',
+          'Metodologías: Scrum y Git con conventional commits y revisión por merge request. Remoto desde 2017.'
         ]
       },
       {
         period: '2016-09-29 / 2017-05-01',
         company: 'Indaba Consultores S.L (LKS)',
-        role: 'Programador',
+        role: 'Desarrollador Full-Stack Junior',
         highlights: [
-          'Autoformación en Java Server Faces, Spring 4 MVC, Ionic Framework (v1 y v2) y Liferay (v6.2 y v7).',
-          'Spring 4 MVC, Hibernate, JSON y JDBC con despliegue en Tomcat.',
-          'Proyectos en Java con Seam Framework + Hibernate y PrimeFaces (JSF) con despliegue en JBoss.',
+          'Desarrollo full-stack de aplicaciones Java empresariales con Spring 4 MVC, Hibernate, JDBC y JSON, desplegadas en Tomcat.',
+          'Proyectos Java EE con Seam Framework + Hibernate y PrimeFaces (JSF), desplegados en JBoss.',
+          'Portales corporativos con Liferay 6.2 y 7: puesta en marcha y desarrollo de portlets a medida.',
+          'Aplicaciones móviles híbridas con Ionic Framework 1 y 2 sobre AngularJS.',
           'Bases de datos Oracle Enterprise 10g/11g/12c.',
-          'Ionic Framework 1 y 2 con AngularJS.',
-          'Liferay 6.2 y 7: puesta en marcha y creación de portlets.',
-          'Virtualización con Docker.',
-          'Instructor de Java, Swing y JDBC.',
-          'Desarrollos en Node.js.'
+          'Desarrollos backend en Node.js y virtualización de entornos con Docker.',
+          'Formador interno de Java, Swing y JDBC.',
+          'Adopción rápida de nuevas tecnologías mediante autoformación (JSF, Spring, Ionic, Liferay).'
         ]
       },
       {
         period: '2016-01-27 / 2016-07-11',
         company: 'ATELEI Engineering',
-        role: 'Realización del proyecto de fin de grado',
+        role: 'Proyecto de Fin de Grado',
         highlights: [
-          'Estudio y búsqueda de alternativas para la sustitución de los applets de Java en entornos web.',
-          'Desarrollo de una aplicación para el microcontrolador ESP8266 para comunicaciones REST a través de sockets SSL.'
+          'Análisis técnico y evaluación de alternativas para la sustitución de applets de Java en entornos web.',
+          'Desarrollo de una aplicación embebida para el microcontrolador ESP8266 (IoT) con comunicaciones REST seguras sobre sockets SSL.'
         ]
       },
       {
@@ -94,8 +94,8 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
         company: 'ATELEI Engineering',
         role: 'Ingeniero en prácticas',
         highlights: [
-          'Realización del frontend y backend de una aplicación cloud de control de acceso.',
-          'Configuración de servidor Apache para subdominios dinámicos y despliegue de la aplicación.'
+          'Desarrollo full-stack (frontend y backend) de una aplicación cloud de control de accesos.',
+          'Configuración de servidor Apache con subdominios dinámicos y despliegue de la aplicación.'
         ]
       },
       {
@@ -261,29 +261,29 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
         company: 'Iris Technology',
         role: 'Senior Full-Stack & DevOps Engineer',
         highlights: [
-          'Architecture & DevOps: Kubernetes, Docker, GCP, continuous deployment with CI/CD and AI-powered automated testing.',
-          'Agentic coding with Claude Code.',
-          'Backend: Node.js (Express, NestJS) and Python (FastAPI), PostgreSQL with TypeORM, Redis.',
-          'Real-time: Kafka + WebSockets.',
-          'Frontend: Angular, React (Tailwind, Vite), data visualization with D3.js.',
-          'AI: autonomous agents (LangChain, CrewAI) and NLP/ML pipelines using OpenAI API, Hugging Face Transformers, spaCy and FAISS.',
-          'Methodologies: Scrum, Git. Remote since 2017.'
+          'Architecture: event-driven CQRS microservices with Apache Kafka, in a Node.js + TypeScript monorepo replicated across several parallel platforms.',
+          'Backend: Node.js (Express, NestJS) and Python (FastAPI); JWT and OAuth2 authentication (Passport), real-time with Socket.IO, Redis and Google Cloud Storage.',
+          'Database: PostgreSQL + TypeORM with versioned migrations verified in CI (forward and rollback).',
+          'Frontend: Angular platforms (RxJS, Angular Material, DevExtreme, reactive forms, i18n in 7 languages with custom tooling) and React (Tailwind, Vite); data visualization with D3.js and Chart.js.',
+          'DevOps: Kubernetes, Docker Swarm and GCP; automated CI/CD with GitLab, multi-stage pipelines optimized with shared caching, self-hosted runners and immutable image-SHA deploys.',
+          'Quality: AVA integration tests against a real Postgres, visual verification with Playwright, ESLint + Prettier and AI-powered automated testing.',
+          'AI: agentic coding with Claude Code; autonomous agents (LangChain, CrewAI) and NLP/ML pipelines (OpenAI API, Hugging Face Transformers, spaCy, FAISS).',
+          'Methodologies: Scrum and Git with conventional commits and merge-request reviews. Remote since 2017.'
         ]
       },
       {
         period: '2016-09-29 / 2017-05-01',
         company: 'Indaba Consultores S.L (LKS)',
-        role: 'Programmer',
+        role: 'Junior Full-Stack Developer',
         highlights: [
-          'Self-training in Java Server Faces, Spring 4 MVC, Ionic Framework (v1 and v2) and Liferay (v6.2 and v7).',
-          'Spring 4 MVC, Hibernate, JSON and JDBC with deployment on Tomcat.',
-          'Java projects with Seam Framework + Hibernate and PrimeFaces (JSF) deployed on JBoss.',
+          'Full-stack development of enterprise Java applications with Spring 4 MVC, Hibernate, JDBC and JSON, deployed on Tomcat.',
+          'Java EE projects with Seam Framework + Hibernate and PrimeFaces (JSF), deployed on JBoss.',
+          'Corporate portals with Liferay 6.2 and 7: setup and custom portlet development.',
+          'Hybrid mobile apps with Ionic Framework 1 and 2 on AngularJS.',
           'Oracle Enterprise 10g/11g/12c databases.',
-          'Ionic Framework 1 and 2 with AngularJS.',
-          'Liferay 6.2 and 7 setup and portlet creation.',
-          'Virtualization with Docker.',
-          'Java, Swing and JDBC instructor.',
-          'Node.js developments.'
+          'Backend development in Node.js and environment virtualization with Docker.',
+          'Internal trainer for Java, Swing and JDBC.',
+          'Fast adoption of new technologies through self-training (JSF, Spring, Ionic, Liferay).'
         ]
       },
       {
@@ -291,8 +291,8 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
         company: 'ATELEI Engineering',
         role: 'Bachelor\'s Thesis Project',
         highlights: [
-          'Study and search for alternatives to replace Java applets in web environments.',
-          'Development of an application for the ESP8266 microcontroller for REST communications via SSL sockets.'
+          'Technical analysis and evaluation of alternatives to replace Java applets in web environments.',
+          'Development of an embedded application for the ESP8266 microcontroller (IoT) with secure REST communications over SSL sockets.'
         ]
       },
       {
@@ -300,8 +300,8 @@ export const RESUME_DATA: { [key: string]: ResumeData } = {
         company: 'ATELEI Engineering',
         role: 'Intern Engineer',
         highlights: [
-          'Frontend and backend development of a cloud access control application.',
-          'Apache server configuration for dynamic subdomains and application deployment.'
+          'Full-stack development (frontend and backend) of a cloud-based access control application.',
+          'Apache server configuration with dynamic subdomains and application deployment.'
         ]
       },
       {
