@@ -36,4 +36,8 @@ export class App {
   print() {
     window.print();
   }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

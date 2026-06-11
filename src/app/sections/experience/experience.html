@@ -7,7 +7,9 @@
       <div class="content">
         <h3>{{ item.role }}</h3>
         <h4>{{ item.company }}</h4>
-        <p *ngIf="item.description">{{ item.description }}</p>
+        <ul class="highlights" *ngIf="item.highlights.length">
+          <li *ngFor="let point of item.highlights">{{ point }}</li>
+        </ul>
       </div>
     </div>
   </div>

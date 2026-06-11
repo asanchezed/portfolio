@@ -6,7 +6,9 @@
       <div class="period">{{ item.period }}</div>
       <div class="content">
         <h3>{{ item.title }}</h3>
-        <p *ngIf="item.description">{{ item.description }}</p>
+        <ul class="highlights" *ngIf="item.highlights.length">
+          <li *ngFor="let point of item.highlights">{{ point }}</li>
+        </ul>
         <div class="tech-list" *ngIf="item.technologies.length">
           <span class="tech-chip" *ngFor="let tech of item.technologies">{{ tech }}</span>
         </div>

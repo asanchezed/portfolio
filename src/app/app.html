@@ -28,3 +28,11 @@
 <app-languages></app-languages>
 <app-contact></app-contact>
 <app-cover-letter></app-cover-letter>
+
+<button
+  class="scroll-top"
+  [class.visible]="showStickyHeader"
+  (click)="scrollToTop()"
+  [attr.aria-label]="languageService.currentLanguage() === 'es' ? 'Volver arriba' : 'Back to top'"
+  [title]="languageService.currentLanguage() === 'es' ? 'Volver arriba' : 'Back to top'"
+>↑</button>
